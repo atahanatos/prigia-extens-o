@@ -1,0 +1,56 @@
+/* =================================================================
+   PRIGIA CAIXA FINAL — Estilos do botão, badge e modal
+   Design System v2: Indigo + Warm Neutrals
+   ================================================================= */
+
+/* Botão-ícone da impressora no header */
+.sb-caixa-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: 1.5px solid #ebebf0;
+    border-radius: 10px;
+    background: #f8f8fc;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 16px;
+    line-height: 1;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.sb-caixa-btn:hover {
+    background: #e8eaf6;
+    border-color: #5c6bc0;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(48, 63, 159, 0.15);
+}
+
+.sb-caixa-btn:active {
+    transform: translateY(0);
+}
+
+/* Badge de contagem */
+.sb-caixa-badge {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background: linear-gradient(135deg, #303f9f, #5c6bc0);
+    color: white;
+    font-size: 9px;
+    font-weight: 700;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 999px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+    line-height: 1;
+    font-family: 'Inter', -apple-system, sans-serif;
+    box-shadow: 0 2px 6px rgba(48, 63, 159, 0.35);
+    border: 2px solid #ffffff;
+}

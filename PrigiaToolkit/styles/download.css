@@ -1,0 +1,80 @@
+/* =================================================================
+   PRIGIA DOWNLOAD — Estilos do painel e lista de bilhetes
+   Design System v2: Indigo + Warm Neutrals
+   ================================================================= */
+
+/* Container Principal */
+#smartbus-controls {
+    background-color: #ffffff;
+    padding: 16px;
+    border: 1px solid #ebebf0;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(26, 26, 46, 0.06);
+    margin-bottom: 12px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Botão Principal (fallback — JS injeta versão definitiva) */
+.smartbus-btn-action {
+    display: block;
+    width: 100%;
+    margin: 8px auto 0;
+    padding: 11px 16px;
+    background: linear-gradient(135deg, #303f9f, #283593);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(48, 63, 159, 0.25);
+}
+
+.smartbus-btn-action:hover {
+    background: linear-gradient(135deg, #283593, #1d2660);
+    box-shadow: 0 4px 16px rgba(48, 63, 159, 0.35);
+    transform: translateY(-1px);
+}
+
+.smartbus-btn-action:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 4px rgba(48, 63, 159, 0.2);
+}
+
+.smartbus-btn-action:disabled {
+    background: #f0f0f5;
+    color: #9e9eb0;
+    border: none;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Checkboxes */
+.smartbus-chk-big {
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+    cursor: pointer;
+    accent-color: #303f9f;
+    vertical-align: middle;
+    flex-shrink: 0 !important;
+    border: 1.5px solid #d0d0d8;
+    border-radius: 4px;
+    transition: all 0.15s ease;
+}
+
+/* Lista de itens */
+.spn-item {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    padding: 10px 8px !important;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+.spn-item:hover {
+    background-color: #f8f8fc !important;
+}

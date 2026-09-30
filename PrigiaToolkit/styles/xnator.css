@@ -1,0 +1,11 @@
+/* Apenas pinta e ajusta o "X" que o Javascript vai inserir no HTML */
+.default-seat.item-confirmed .seat-number,
+.default-seat.item-sold .seat-number,
+.default-seat.item-reserved .seat-number,
+.default-seat.item-unavailable .seat-number,
+.default-seat.item-occupied .seat-number,
+.default-seat.item-locked .seat-number {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+}

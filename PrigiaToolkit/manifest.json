@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "name": "Prigia Caixa de Ferramentas",
+  "version": "1.0.0",
+  "description": "Kit completo do Prigia para SmartBus: Download inteligente de PDFs, Lista de Reservas, Copiador de Dados e Print de Mapa de Poltronas.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads",
+    "clipboardWrite",
+    "clipboardRead"
+  ],
+  "host_permissions": [
+    "*://*.smarttravelit.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.smarttravelit.com/*"
+      ],
+      "js": [
+        "lib/pdf.min.js",
+        "lib/html-to-image.min.js",
+        "lib/qrcode.min.js",
+        "lib/jsQR.min.js",
+        "modules/caixa.js",
+        "modules/download.js",
+        "modules/reservas.js",
+        "modules/copiador.js",
+        "modules/xnator.js"
+      ],
+      "css": [
+        "styles/download.css",
+        "styles/xnator.css",
+        "styles/caixa.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "lib/pdf.worker.min.js"
+      ],
+      "matches": [
+        "*://*.smarttravelit.com/*"
+      ]
+    }
+  ]
+}
